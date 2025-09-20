@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         
         // Ajouter des écouteurs d'événements pour tous les liens Home
-        const homeLinks = document.querySelectorAll('.main-nav a[href*="academy.html"]');
+        const homeLinks = document.querySelectorAll('.main-nav a[href*="index.html"]');
         homeLinks.forEach(function(link) {
             link.addEventListener('click', function() {
                 hideAllSubnavs();
