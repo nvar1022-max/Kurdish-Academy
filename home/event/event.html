@@ -14,24 +14,69 @@
     <link rel="stylesheet" href="../../styles.css">
     <script src="../../scripts.js"></script>
     <style>
-        /* Style spécifique pour le message "En cours de construction" */
-        .construction-message {
+        /* Style spécifique pour les événements */
+        .event-card {
             background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 5px;
+            border-radius: 8px;
             padding: 30px;
-            margin: 40px auto;
-            max-width: 600px;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
-        .construction-message h2 {
+        
+        .event-title {
             color: #2e7d32;
-            margin-bottom: 20px;
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
         }
-        .construction-message p {
+        
+        .event-content {
+            display: flex;
+            gap: 30px;
+            align-items: stretch;
+        }
+        
+        .event-image {
+            width: 300px;
+            height: 400px;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 8px;
+            border: 2px dashed #2e7d32;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f9f9f9;
+            color: #2e7d32;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        
+        .event-details {
+            flex: 1;
+            padding-left: 0;
+        }
+        
+        .event-date {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .event-location {
             font-size: 1.1rem;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+        
+        .event-description {
+            font-size: 1rem;
             color: #555;
+            line-height: 1.6;
+            margin-top: 15px;
         }
     </style>
 </head>
@@ -122,11 +167,25 @@
     
     <!-- Main content of the site (white on light beige background) -->
     <main>
-        <!-- "Under construction" message in a white rectangle -->
-        <div class="construction-message">
-            <h2>Event - Under Construction</h2>
-            <p>This section will be available soon.</p>
-            <p>We are currently working on the content for this page.</p>
+        <h2 class="main-title-left">Événements à venir</h2>
+        
+        <!-- Carte événement Newroz -->
+        <div class="event-card">
+            <h3 class="event-title">Newroz Lausanne 2026</h3>
+            
+            <div class="event-content">
+                <!-- Image de l'événement Newroz -->
+                <img src="images/image newroz .png" alt="Newroz Lausanne 2026" class="event-image">
+                
+                <div class="event-details">
+                    <div class="event-date">📅 23 mars 2026</div>
+                    <div class="event-location">📍 Riponne, Lausanne</div>
+                    
+                    <div class="event-description">
+                        Rejoignez-nous pour célébrer Newroz, le Nouvel An kurde ! Une journée festive avec musique traditionnelle, danses folkloriques, gastronomie kurde et activités culturelles pour toute la famille.
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     
