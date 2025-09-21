@@ -73,6 +73,10 @@ header {
     background-color: #fff9c4;       /* Fond jaune clair pour la barre de navigation */
     border-bottom: 1px solid #fff176; /* Bordure légère en bas en jaune plus foncé */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Ombre légère pour effet de profondeur */
+    display: flex;                   /* Disposition horizontale des éléments */
+    justify-content: center;         /* Centre les éléments horizontalement */
+    padding: 0;                      /* Supprime le rembourrage par défaut */
+    margin: 0;                       /* Supprime les marges par défaut */
 }
 
 /* Style de la liste de navigation */
@@ -147,7 +151,6 @@ header {
 .sub-nav a:hover, .sub-nav a.active {
     background-color: #2e7d32;        /* Vert foncé au survol (même que l'entête) */
     color: white;                    /* Texte en blanc au survol */
-    font-weight: bold;               /* Texte en gras au survol pour plus de visibilité */
     box-shadow: 0 1px 2px rgba(0,0,0,0.15); /* Légère ombre pour effet de profondeur */
 }
 
